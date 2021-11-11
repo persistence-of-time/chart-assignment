@@ -20,13 +20,133 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-family:"Ubuntu", sans-serif;
     font-size: 16px;
+    display: block;
+    margin: 8px;
 }
 
+  #main {
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    max-width: 550px;
+    min-width: 350px;
+    margin: 0px center;
+    background-color: white;
+  
+  }
+
+  h1 {
+    color: black;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  h2 {
+
+    color: #0047AB;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #456990;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 10px;
+  }
+  h4 {
+    color: #0047AB;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 20px 10px;
+  }
+
+.byline { 
+    color: #0047AB;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+    
+}
+
+.byline2 { 
+      color: #0047AB;
+      font-size: 14px;
+      font-weight: 200;
+      text-align: left;
+      
+}
+
+img {
+  display: block;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px; 
+}
+.container.photo {
+  max-width: 1200px;
+  padding: 0;
+}
+
+.container.chart{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px; 
+}
+
+p {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    line-break: loose;
+    position: relative;
+    border: 0;
+    margin: 15px;
+    padding: 0;
+  }
+  p:first-of-type:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: .9;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+.caption {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+.caption-2 {
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+}
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon {
+        flex-basis: 33%;
+    }
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 }
